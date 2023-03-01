@@ -6,8 +6,49 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+    background-color: #411530;
+    color: #fff;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.gold {
+    color: #d36b00;
 }
 
 
 /* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+    font-size: 20px;
+    height: 80px;
+}
+
+.nav__link--list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__link {
+    margin-left: 50px;
+}
+
+
+/* LANDING PAGE */
+
 
