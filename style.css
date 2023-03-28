@@ -75,6 +75,14 @@ nav {
     margin-left: 50px;
 }
 
+.figure__container {
+    height: 100%;
+}
+
+#logo {
+    height: 100%;
+}
+
 
 /* LANDING PAGE */
 .header {
