@@ -140,3 +140,20 @@ nav {
     background-color: transparent;
 }
 
+
+/* DRINKS NAV */
+.overlay {
+    background-image: url(assets/bar.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
