@@ -108,11 +108,14 @@ nav {
 .header__search {
     width: 100%;
     margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .searchbar {
     height: 50px;
-    width: 50%;
+    width: 100%;
+    max-width: 800px;
     background-color: #fff;
     border: none;
     border-radius: 18px;
@@ -136,29 +139,32 @@ nav {
 }
 
 .fa-magnifying-glass {
-    font-size: 24px;
+    font-size: 32px;
     background-color: transparent;
 }
 
 
-/* DRINKS NAV */
-.overlay {
-    background-image: url(assets/bar.jpg);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-}
-
+/* DRINKS HEADER */
 .drinks__header--content {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input__wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.search__img--wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 10000;
+    padding: 0 20px 0 8px;
+    font-size: 32px;
 }
 
