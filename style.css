@@ -166,5 +166,18 @@ nav {
     z-index: 10000;
     padding: 0 20px 0 8px;
     font-size: 32px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drinks__search {
+    color: #411530;
+    transition: all 200ms ease;
+}
+
+.search__img--wrapper:hover .drinks__search{
+    color: #d36b00;
 }
 
