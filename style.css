@@ -204,3 +204,27 @@ nav {
     opacity: 0.8;
 }
 
+.progress-bar__track {
+    width: 0%;
+    height: 5px;
+    transform: translateY(-5px);
+    background-color: black;
+    animation: progress 3s linear infinite;
+}
+
+.progress-bar__fill {
+    width: 0%;
+    height: 5px;
+    background-color: grey;
+    animation: progress 3s 1s linear infinite;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
