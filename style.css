@@ -207,7 +207,6 @@ nav {
 .progress-bar__track {
     width: 0%;
     height: 5px;
-    transform: translateY(-5px);
     background-color: black;
     animation: progress 3s linear infinite;
 }
@@ -215,6 +214,7 @@ nav {
 .progress-bar__fill {
     width: 0%;
     height: 5px;
+    transform: translateY(-5px);
     background-color: grey;
     animation: progress 3s 1s linear infinite;
 }
@@ -224,7 +224,7 @@ nav {
         width: 0%;
     }
     100% {
-        width: 100%;
+        width: 150%;
     }
 }
 
