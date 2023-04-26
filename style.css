@@ -145,10 +145,15 @@ nav {
 
 
 /* DRINKS HEADER */
+#drinks__landing-page {
+    height: 367px;
+}
+
 .drinks__header--content {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 40px;
 }
 
 .input__wrapper {
@@ -179,5 +184,23 @@ nav {
 
 .search__img--wrapper:hover .drinks__search{
     color: #d36b00;
+}
+
+/* DRINKS CONTENT */
+#drinks__content {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.progress-bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 5px;
+    background-color: grey;
+    opacity: 0.8;
 }
 
