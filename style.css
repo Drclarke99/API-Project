@@ -194,6 +194,51 @@ nav {
     position: relative;
 }
 
+/* FILTER */
+.content__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 72px;
+    padding: 0px 20px;
+}
+
+.search-info, .range__filter h2 {
+    font-size: 28px;
+    letter-spacing: 0.1em;
+}
+
+/* DRINK RESULTS */
+.drinks__loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    font-size: 40px;
+}
+  
+.drinks__loading--spinner {
+    display: none !important;
+}
+
+.drinks__loading .drinks__loading--spinner {
+    display: block !important;
+}
+
+.fa-spinner {
+  animation: rotate 750ms infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* PROGRESS BAR */
 .progress-bar {
     position: absolute;
     left: 0;
@@ -227,4 +272,5 @@ nav {
         width: 150%;
     }
 }
+
 
