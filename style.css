@@ -186,58 +186,6 @@ nav {
     color: #d36b00;
 }
 
-/* DRINKS CONTENT */
-#drinks__content {
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-/* FILTER */
-.content__wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 72px;
-    padding: 0px 20px;
-}
-
-.search-info, .range__filter h2 {
-    font-size: 28px;
-    letter-spacing: 0.1em;
-}
-
-/* DRINK RESULTS */
-.drinks__loading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 60px;
-    font-size: 40px;
-}
-  
-.drinks__loading--spinner {
-    display: none !important;
-}
-
-.drinks__loading .drinks__loading--spinner {
-    display: block !important;
-}
-
-.fa-spinner {
-  animation: rotate 750ms infinite linear;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /* PROGRESS BAR */
 .progress-bar {
     position: absolute;
@@ -271,6 +219,71 @@ nav {
     100% {
         width: 150%;
     }
+}
+
+/* DRINKS CONTENT */
+#drinks__content {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* FILTER */
+.content__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 72px;
+    padding: 0px 20px;
+}
+
+.search-info, .range__filter h2 {
+    font-size: 28px;
+    letter-spacing: 0.1em;
+}
+
+#filter {
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    height: 36px;
+    line-height: 40px;
+    outline: none;
+    padding: 0 16px;
+    width: 100%;
+    max-width: 200px;
+}
+
+/* DRINK RESULTS */
+.drinks__loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    font-size: 40px;
+}
+  
+.drinks__loading--spinner {
+    display: none !important;
+}
+
+.drinks__loading .drinks__loading--spinner {
+    display: block !important;
+}
+
+.fa-spinner {
+  animation: rotate 750ms infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 
