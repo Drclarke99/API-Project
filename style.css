@@ -240,6 +240,7 @@ nav {
 .search-info, .range__filter h2 {
     font-size: 28px;
     letter-spacing: 0.1em;
+    margin-bottom: 10px;
 }
 
 #filter {
