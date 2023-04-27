@@ -49,25 +49,27 @@
       </div>
     </section>
     <section id="drinks__content">
-        <div class="progress-bar">
-            <div class="progress-bar__track"></div>
-            <div class="progress-bar__fill"></div>
-            <div class="progress-bar__buffer"></div>
+      <div class="progress-bar">
+        <div class="progress-bar__track"></div>
+        <div class="progress-bar__fill"></div>
+        <div class="progress-bar__buffer"></div>
+      </div>
+      <div class="content__wrapper">
+        <h1 class="search-info">Search results:</h1>
+        <div class="range__filter">
+          <h2>Filters</h2>
+          <select id="filter" onchange="filterBooks(event)">
+            <option value="" disabled selected>Sort</option>
+            <option value="A_TO_Z">Alphabet, A to Z</option>
+            <option value="Z_TO_A">Alphabet, Z to A</option>
+          </select>
         </div>
-        <div class="content__wrapper">
-            <h1 class="search-info">Search results:</h1>
-            <div class="range__filter">
-                <h2>Filters</h2>
-                <select id="filter" onchange="filterBooks(event)">
-                  <option value="" disabled selected>Sort</option>
-                  <option value="A_TO_Z">Alphabet, A to Z</option>
-                  <option value="Z_TO_A">Alphabet, Z to A</option>
-                </select>
-            </div>
-        </div>
-        <div class="drinks drinks__loading">
-          <i class="fas fa-spinner drinks__loading--spinner"></i>
-        </div>
+      </div>
+      <div class="drinks drinks__loading">
+        <i class="fas fa-spinner drinks__loading--spinner"></i>
+      </div>
     </section>
   </body>
+
+  <script src="app.js"></script>
 </html>
