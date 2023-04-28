@@ -42,7 +42,7 @@
             type="text"
             placeholder="Search by Drink Name or Alcohol Type"
           />
-          <div class="search__img--wrapper">
+          <div class="search__img--wrapper" onclick="renderFish()">
             <i class="fa-solid fa-magnifying-glass drinks__search"></i>
           </div>
         </div>
@@ -58,14 +58,14 @@
         <h1 class="search-info">Search results:</h1>
         <div class="range__filter">
           <h2>Filters</h2>
-          <select id="filter" onchange="filterBooks(event)">
+          <select id="filter" onchange="filterFish(event)">
             <option value="" disabled selected>Sort</option>
             <option value="A_TO_Z">Alphabet, A to Z</option>
             <option value="Z_TO_A">Alphabet, Z to A</option>
           </select>
         </div>
       </div>
-      <div class="drinks drinks__loading">
+      <div class="fish__list drinks__loading">
         <i class="fas fa-spinner drinks__loading--spinner"></i>
       </div>
     </section>

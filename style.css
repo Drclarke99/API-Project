@@ -287,4 +287,14 @@ nav {
   }
 }
 
+.fish__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.fish {
+    width: 20%;
+    padding: 24px;
+}
+
 
