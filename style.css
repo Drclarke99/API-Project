@@ -295,6 +295,27 @@ nav {
 .fish {
     width: 20%;
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fish__name {
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.fish__name, .fish__body {
+    margin-bottom: 16px;
+}
+
+.fish__body {
+    font-size: 14px;
+}
+
+.fish__price {
+    font-size: 20px;
 }
 
 
