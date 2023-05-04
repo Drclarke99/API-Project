@@ -37,14 +37,18 @@
       <div class="drinks__header--content">
         <h1 class="title">Search our drinks</h1>
         <div class="input__wrapper">
-          <input
-            class="searchbar"
-            type="text"
-            placeholder="Search by Drink Name or Alcohol Type"
-          />
-          <div class="search__img--wrapper" onclick="displayFish()">
-            <i class="fa-solid fa-magnifying-glass drinks__search"></i>
-          </div>
+          <form>
+            <input
+              class="searchbar"
+              type="text"
+              name="fishName"
+              id="fishName"
+              placeholder="Search by Drink Name or Alcohol Type"
+            />
+            <div class="search__img--wrapper" onclick="searchFish(fishName)">
+              <i class="fa-solid fa-magnifying-glass drinks__search"></i>
+            </div>
+          </form>
         </div>
       </div>
     </section>

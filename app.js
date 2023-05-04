@@ -12,21 +12,21 @@ async function renderFish(filter) {
   const fishes = await fetch("https://acnhapi.com/v1/fish");
   const fishData = await fishes.json();
   let fishKeys = Object.entries(fishData);
-  console.log(fishKeys);
-  let fish;
-  for (let i = 0; i <= fishKeys.length; i++) {
-    fish += fishKeys[i];//.name['name-USen'];
-  }
-  console.log(fish);
   if (filter === 'Z_TO_A') {
-    fish.sort();
-    fish.reverse();
+    fishKeys.sort();
+    fishKeys.reverse();
   }
   else if (filter === 'A_TO_Z') {
-    fish.sort();
+    fishKeys.sort();
   }
-  //console.log(fish);
-  //fishListEl.innerHTML = fishKeys.map(user => userHTML(user)).join("");
+  fishListEl.innerHTML = fishKeys.map(user => userHTML(user)).join("");
+}
+
+async function searchFish(fishName) {
+  const fish = await fetch(`https://acnhapi.com/v1/fish/name/${fishName}`);
+  const fishData = await fish.json();
+  let fishKeys = Object.entries(fishData);
+  fishListEl.innerHTML = fishKeys.map(user => userHTML(user)).join("");
 }
 
 function userHTML(user) {
